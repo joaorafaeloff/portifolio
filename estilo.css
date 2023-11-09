@@ -83,9 +83,65 @@ button{
     color: #2ecc71;
     padding: 5px;
     margin-top: 15px;
-
 }
-.container-text button{
+.wrapper{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 5px;
+}
+.wrapper a{
+    color: #2ecc71;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 150px;
+    cursor: pointer;
+}
+.Sobre{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
+    transition: all .4s;
+}
+.sobre-conteudo{
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    max-width: 90%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    padding: 1em 2em;
+}
+.sobre-conteudo h1{
+    color: #2ecc71;
+}
+.Sobre:target{
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+}
+.sobre-fechar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
+}
+/*.container-text button{
     color: #2ecc71;
     background: transparent;
     border: solid 1px #2ecc71;
@@ -95,7 +151,7 @@ button{
     width: 150px;
     margin-top: 15px;
     cursor: pointer;
-}
+}*/
 @media screen and (max-width: 640px) {
     .Topo{
     max-width: 100%;
