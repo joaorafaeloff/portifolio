@@ -24,7 +24,7 @@ body{
     max-width: 100%;
     align-items: center;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 5rem;
 }
 .cabeçalho-link{
     display: flex;
@@ -132,7 +132,7 @@ button{
 .Sobre:target{
     visibility: visible;
     opacity: 1;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .sobre-fechar{
     position: absolute;
