@@ -96,3 +96,20 @@ button{
     margin-top: 15px;
     cursor: pointer;
 }
+@media screen and (max-width: 640px) {
+    .Topo{
+    max-width: 100%;
+    align-items: center;
+    padding-top: 1rem;
+    }
+    .cabeçalho-link {
+        display: table-column-group;
+        padding-top: 8px;
+    }
+    .container-text{
+        padding: 50px 0 0 25px;
+    }
+    .text h1{
+        font-size: 45px;
+    }
+}
