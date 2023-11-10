@@ -57,7 +57,10 @@ button{
     padding: 5px;
     border-radius: 15px;
     font-size: 12px;
+    text-align: center;
+    text-decoration: none;
     width: 150px;
+    cursor: pointer;
 }
 .container-text{
     padding: 150px 0 0 175px;
@@ -138,10 +141,10 @@ button{
     position: absolute;
     top: 10px;
     right: 10px;
-    color: #585858;
+    color: #2ecc71;
     text-decoration: none;
 }
-/*.container-text button{
+.sobre-conteudo button{
     color: #2ecc71;
     background: transparent;
     border: solid 1px #2ecc71;
@@ -149,9 +152,120 @@ button{
     border-radius: 15px;
     font-size: 12px;
     width: 150px;
-    margin-top: 15px;
+    /*margin-top: 5px;*/
     cursor: pointer;
-}*/
+}
+
+.sobre-conteudo a{
+    color: #2ecc71;
+}
+section{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 10px;
+   
+}
+section h2{
+    color: #2ecc71;
+    font-size: 2.5rem;
+    margin: 2rem;
+    margin-bottom: 0px;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;   
+}
+form label{
+    color: #2ecc71;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 10px;
+    outline: none;
+    border: 2px;
+    border-color: #2ecc71;
+    margin-bottom: 0px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form textarea{
+    padding: 5px;
+    outline: none;
+    border: 1px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+form button{
+    color: #2ecc71;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    padding: 5px;
+    padding-top: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    cursor: pointer;
+}
+form button:hover{
+    color: #fff;
+    background-color: #2ecc71;
+    border-color: #fff;
+    transition: all 0.5s;
+}
+#msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.msgtxt{
+    color: #2ecc71;
+   
+}
+.msgtx{ 
+    color: #fff;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 20px;
+}
+#Home{
+    color: #2ecc71;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    padding: 5px;
+    padding-top: 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    cursor: pointer;
+    align-items: center;
+}
+#lin span{
+    color: #2ecc71;
+}
+#Home:hover{
+    color: #fff;
+    background-color: #2ecc71;
+    border-color: #fff;
+    transition: all 0.5s;
+    z-index: 1;
+}
+#Home #lin span:hover{
+    color: #fff;
+    transition: all 0.5s;
+    z-index: 1;
+}
 @media screen and (max-width: 640px) {
     .Topo{
     max-width: 100%;
