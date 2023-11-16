@@ -214,6 +214,14 @@ form button{
     width: 150px;
     cursor: pointer;
 }
+form button span{
+    color: #2ecc71;
+}
+form button span:hover{
+    color: #fff;
+    transition: all 0.5s;
+    z-index: 1;
+}
 form button:hover{
     color: #fff;
     background-color: #2ecc71;
@@ -281,5 +289,32 @@ form button:hover{
     }
     .text h1{
         font-size: 45px;
+    }
+    section form{
+        display: flex;
+        flex-direction: column;
+        padding-top: 3px;   
+    }
+    form label{
+        color: #2ecc71;
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    form input{
+        padding: 5px;
+        outline: none;
+        border: 2px;
+        border-color: #2ecc71;
+        margin-bottom: 0px;
+        font-size: 12px;
+        transition: all 0.5s;
+    }
+    form textarea{
+        padding: 3px;
+        outline: none;
+        border: 1px;
+        font-size: 12px;
+        margin-bottom: 3px;
+        transition: all 0.5s;
     }
 }
