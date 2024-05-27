@@ -63,7 +63,7 @@ button{
     cursor: pointer;
 }
 .container-text{
-    padding: 150px 0 0 175px;
+    padding: 80px 0 0 175px;
 }
 .text h3{
     color: #fff;
@@ -93,6 +93,12 @@ button{
     justify-content: left;
     padding-top: 5px;
 }
+.wrapper2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
 .wrapper a{
     color: #2ecc71;
     background: transparent;
@@ -104,6 +110,19 @@ button{
     text-decoration: none;
     text-transform: uppercase;
     width: 150px;
+    cursor: pointer;
+}
+.wrapper2 a{
+    color: #2ecc71;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    margin-top: 80px;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
     cursor: pointer;
 }
 .Sobre{
@@ -120,6 +139,20 @@ button{
     /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
     transition: all .4s;
 }
+.Imagens{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
+    transition: all .4s;
+}
 .sobre-conteudo{
     border-radius: 4px;
     position: relative;
@@ -128,6 +161,15 @@ button{
     max-width: 90%;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
     padding: 1em 2em;
+}
+.Imagens-conteudo{
+    border-radius: 4px;
+    position: relative;
+    width: 840px;
+    height: 540px;
+    max-width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+
 }
 .sobre-conteudo h1{
     color: #2ecc71;
@@ -152,11 +194,76 @@ button{
     border-radius: 15px;
     font-size: 12px;
     width: 150px;
-    /*margin-top: 5px;*/
+    margin-top: 5px;
     cursor: pointer;
 }
 
 .sobre-conteudo a{
+    color: #2ecc71;
+}
+.Imagens:target{
+    visibility: visible;
+    opacity: 1;
+    padding-bottom: 8px;
+}
+.Imagens-fechar{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #2ecc71;
+    text-decoration: none;
+}
+.Imagens-conteudo button{
+    color: #2ecc71;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+.prev {
+    position: absolute;
+    bottom: 8px;
+    left: 48%;
+    transform: translate(-50%);
+    margin-top: -40px;
+    display: flex;
+    /*justify-content: center;*/
+    border: 2px solid #2ecc71;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s; 
+}
+.prev span{
+    color: #2ecc71;
+}
+.next {
+    position: absolute;
+    bottom: 8px;
+    left: 52%;
+    transform: translate(-50%);
+    margin-top: -40px;
+    display: flex;
+    /*justify-content: center;*/
+    border: 2px solid #2ecc71;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.next span{
     color: #2ecc71;
 }
 section{

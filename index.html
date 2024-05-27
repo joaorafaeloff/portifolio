@@ -55,6 +55,92 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="wrapper2">
+            <a href="#Imagens">Certificados e Projetos</a>
+        </div>
+        <div id="Imagens" class="Imagens">
+            <div class= "Imagens-conteudo">
+
+
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="01AJSeD.png" style="width:95%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="02WDR.png" style="width:95%">
+                </div>
+                  
+                <div class="mySlides fade">
+                  <img src="03API.png" style="width:95%">                    
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="04PRJTPY.png" style="width:95%">
+                </div>
+                    
+                 <div class="mySlides fade">
+                  <img src="05LJdD.png" style="width:95%">
+                </div>
+                                       
+                <a class="prev" onclick="plusSlides(-1)"><span>&#10094;</span></a>
+                <a class="next" onclick="plusSlides(1)"><span>&#10095;</span></a>
+
+                <a href="#" class="Imagens-fechar">&times;</a>
+                    
+              </div>
+              <script>
+                  var slideIndex = 1;
+                  showSlides(slideIndex);
+                    
+                  function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                    
+                  function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                  }
+                    
+                  function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                  }
+              </script>
+             <!--<div class="Slider">
+                <div class="Slides">
+                    <input type="Radio" name="btn-Radio" id="Radio1">
+                    <input type="Radio" name="btn-Radio" id="Radio2">
+
+                    <div class="imgsld">                
+                        <img src="AJSeD.png" alt="Imagem 1" />
+                        <img src="WDR.png" alt="Imagem 2" />
+                        <img src="LJdD.png" alt="Imagem 3" />
+                        <img src="API.png" alt="Imagem 4" />
+                        <img src="PRJT1.png" alt="Imagem 5" />
+                        <img src="PRJT2.png" alt="Imagem 6" />
+                        <img src="PRJT3.png" alt="Imagem 7" />
+                        <img src="PRJT4.png" alt="Imagem 8" />
+                        <img src="PRJT5.png" alt="Imagem 9" />
+                        <img src="PRJTPY.png" alt="Imagem 10" />
+                        
+                    </div>
+
+                    <div class="manual-navigation">
+                        <label for="Radio1" class="manual-btn"></label>
+                        <label for="Radio2" class="manual-btn"></label>
+                    </div>
+                </div>
+              </div>-->
+            </div>
+        </div>
+    </div> 
+    <!--<script src="script.js"></script>-->   
 </body>
 </html>
